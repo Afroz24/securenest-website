@@ -37,9 +37,11 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
 
 /* ===== SCROLLBAR ===== */
+/*
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--dark); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+*/
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; }
