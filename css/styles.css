@@ -21,7 +21,7 @@
 
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+html { font-size: 16px; overflow-x: hidden; }
 body {
   background: var(--black);
   color: var(--white);
@@ -37,11 +37,14 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
 
 /* ===== SCROLLBAR ===== */
-/*
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--dark); }
-::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
-*/
+/* Hide scrollbar globally for smooth scrolling */
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
+}
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; }

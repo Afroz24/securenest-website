@@ -38,7 +38,7 @@ const App = {
       view.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
       view.style.opacity = '1';
       view.style.transform = 'translateY(0)';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo(0, 0);
       this.updateActiveNav(page);
       this.initRevealObserver();
       this.initPageSpecific(page);
