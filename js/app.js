@@ -406,8 +406,8 @@ function renderAbout() {
       <h2 class="section-title reveal reveal-delay-1">The People <span class="gold">Behind SecureNest</span></h2>
       <div class="team-grid">
         ${[
-          {name:'Rajesh Kumar', role:'Founder & CEO', img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'},
-          {name:'Priya Sharma', role:'Design Lead', img:'https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=400&q=80'},
+          {name:'Md Javeed', role:'Founder & CEO', img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'},
+          {name:'Md Feroz', role:'Design Lead', img:'assets/team/feroz.jpg'},
           {name:'Anand Reddy', role:'Head of Operations', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80'},
           {name:'Divya Nair', role:'Customer Relations', img:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80'}
         ].map((t,i) => `
