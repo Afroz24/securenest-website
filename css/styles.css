@@ -1017,8 +1017,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Navbar responsive fixes */
+  .nav-inner {
+    width: 100%;
+    padding: 0 20px;
+    max-width: none;
+  }
   .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    position: relative;
+    right: auto;
+  }
+  .nav-logo-text span:first-child {
+    font-size: 1.2rem;
+  }
+  .nav-logo-text span:last-child {
+    font-size: 0.5rem;
+  }
+
   .section-padding { padding: 60px 0; }
   .hero-title { font-size: clamp(2.2rem, 8vw, 3.5rem); }
   .hero-badges { display: none; }
