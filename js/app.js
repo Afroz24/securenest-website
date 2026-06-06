@@ -207,13 +207,13 @@ function getFooterHTML() {
           </a>
           <p>Crafting premium mosquito screens, invisible grills, and pleated doors for modern living. Quality that lasts a lifetime.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/share/1D9ZH1BxEv/" title="Facebook" target="_blank">
+            <a href="#" title="Facebook" target="_blank">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z"/></svg>
             </a>
-            <a href="#" title="Instagram" target="_blank">
+            <a href="https://www.instagram.com/securenest1997?igsh=MWM5bjUxdWpkeXlzOQ%3D%3D" title="Instagram" target="_blank">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2.16c3.2,0,3.58,0,4.85.07a6.65,6.65,0,0,1,2.23.41,4,4,0,0,1,1.48.86,4,4,0,0,1,.86,1.48A6.65,6.65,0,0,1,21.77,7.17c0,1.27.07,1.65.07,4.85s0,3.58-.07,4.85a6.65,6.65,0,0,1-.41,2.23,4,4,0,0,1-.86,1.48,4,4,0,0,1-1.48.86,6.65,6.65,0,0,1-2.23.41c-1.27.07-1.65.07-4.85.07s-3.58,0-4.85-.07a6.65,6.65,0,0,1-2.23-.41,4,4,0,0,1-1.48-.86,4,4,0,0,1-.86-1.48A6.65,6.65,0,0,1,2.23,16.83C2.16,15.56,2.16,15.18,2.16,12s0-3.58.07-4.85A6.65,6.65,0,0,1,2.64,4.92a4,4,0,0,1,.86-1.48A4,4,0,0,1,5,2.58a6.65,6.65,0,0,1,2.23-.41C8.47,2.1,8.85,2.1,12,2.16ZM12,7A5,5,0,1,0,17,12,5,5,0,0,0,12,7Zm0,8.25A3.25,3.25,0,1,1,15.25,12,3.25,3.25,0,0,1,12,15.25ZM17,5.5a1.17,1.17,0,1,0,1.17,1.17A1.17,1.17,0,0,0,17,5.5Z"/></svg>
             </a>
-            <a href="https://wa.me/919182297010" title="WhatsApp" target="_blank">
+            <a href="https://wa.me/919989211190" title="WhatsApp" target="_blank">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             </a>
             <a href="#" title="YouTube" target="_blank">
@@ -249,7 +249,7 @@ function getFooterHTML() {
           </div>
           <div class="footer-contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.41-.41a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <p>+91 98765 43210</p>
+            <p>+91 99892 11190</p>
           </div>
           <div class="footer-contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -299,11 +299,11 @@ function renderHome() {
       <p class="section-subtitle reveal reveal-delay-2">Each product is precision-engineered for your home's unique requirements</p>
       <div class="products-grid reveal reveal-delay-2">
         ${[
-          {name:'Mosquito Screens', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80'},
-          {name:'Invisible Grills', img:'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=400&q=80'},
-          {name:'SS & MS Grills', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80'},
-          {name:'Pleated Doors', img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=80'},
-          {name:'Cloth Hangs', img:'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80'}
+          {name:'Mosquito Screens', img:'assets/products/mosquito-mesh.jpg'},
+          {name:'Invisible Grills', img:'assets/products/invisible-grills.jpg'},
+          {name:'SS Grills', img:'assets/products/ss-grills.jpg'},
+          {name:'Shoe Racks', img:'assets/products/shoe-rack.jpg'},
+          {name:'Cloth Hangs', img:'assets/products/hangers.jpg'}
         ].map(p => `
         <div class="product-card" data-page="products" style="cursor:pointer" onclick="App.navigate('products')">
           <img src="${p.img}" alt="${p.name}" loading="lazy">
@@ -444,28 +444,6 @@ function renderAbout() {
     </div>
   </section>
 
-  <section class="section-padding" style="background:var(--dark)">
-    <div class="container text-center">
-      <span class="section-tag reveal">Our Team</span>
-      <h2 class="section-title reveal reveal-delay-1">The People <span class="gold">Behind SecureNest</span></h2>
-      <div class="team-grid">
-        ${[
-          {name:'Md Javeed', role:'Founder & CEO', img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'},
-          {name:'Md Feroz', role:'Design Lead', img:'assets/team/feroz.jpg'},
-          {name:'Anand Reddy', role:'Head of Operations', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80'},
-          {name:'Divya Nair', role:'Customer Relations', img:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80'}
-        ].map((t,i) => `
-        <div class="team-card reveal reveal-delay-${i+1}">
-          <div class="team-card-img"><img src="${t.img}" alt="${t.name}" loading="lazy"></div>
-          <div class="team-card-info">
-            <h4>${t.name}</h4>
-            <span>${t.role}</span>
-          </div>
-        </div>`).join('')}
-      </div>
-    </div>
-  </section>
-
   <div class="cta-strip">
     <div class="container">
       <div class="cta-strip-inner">
@@ -479,12 +457,20 @@ function renderAbout() {
 
 // ===== PRODUCTS PAGE =====
 const PRODUCTS_DATA = [
+  /*
   {id:1, name:'Mosquito Screens', category:'screens', desc:'High-quality fiberglass and SS mesh screens that keep insects out while allowing fresh air to flow freely.', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', tags:['Fiberglass','Stainless Steel','Custom Size'], badge:'Bestseller'},
   {id:2, name:'Invisible Grills', category:'grills', desc:'Ultra-strong SS316 wire grills that are virtually invisible, giving your home an unobstructed view.', img:'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80', tags:['SS316 Wire','Child Safe','High Tensile'], badge:'Premium'},
   {id:3, name:'SS Grills', category:'grills', desc:'Stainless steel grills crafted with precision, combining strength with contemporary design aesthetics.', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80', tags:['Stainless Steel','Rust-Proof','Custom Design'], badge:''},
   {id:4, name:'MS Grills', category:'grills', desc:'Mild steel grills with powder coating for maximum corrosion resistance and long-lasting durability.', img:'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80', tags:['Powder Coated','Mild Steel','Heavy Duty'], badge:''},
   {id:5, name:'Pleated Doors', category:'doors', desc:'Elegant pleated mesh doors that fold neatly when open, ideal for balconies and sliding door entrances.', img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80', tags:['Fold-Away','Smooth Slide','Anti-Insects'], badge:'New'},
   {id:6, name:'Cloth Hangs', category:'other', desc:'Stylish and functional cloth hanging systems for wardrobes, balconies, and utility spaces.', img:'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80', tags:['Space-Saving','Durable','Versatile'], badge:''},
+  */
+ {id:1, name:'Mosquito Screens', category:'screens', desc:'High-quality fiberglass and SS mesh screens that keep insects out while allowing fresh air to flow freely.', img:'assets/products/mosquito-mesh.jpg', tags:['Fiberglass','Stainless Steel','Custom Size'], badge:'Bestseller'},
+  {id:2, name:'Invisible Grills', category:'grills', desc:'Ultra-strong SS316 wire grills that are virtually invisible, giving your home an unobstructed view.', img:'assets/products/invisible-grills.jpg', tags:['SS316 Wire','Child Safe','High Tensile'], badge:'Premium'},
+  {id:3, name:'SS Grills', category:'grills', desc:'Stainless steel grills crafted with precision, combining strength with contemporary design aesthetics.', img:'assets/products/ss-grills.jpg', tags:['Stainless Steel','Rust-Proof','Custom Design'], badge:''},
+  // {id:4, name:'MS Grills', category:'grills', desc:'Mild steel grills with powder coating for maximum corrosion resistance and long-lasting durability.', img:'assets/products/ss-grills.jpg', tags:['Powder Coated','Mild Steel','Heavy Duty'], badge:''},
+  {id:5, name:'Shoe Rack', category:'doors', desc:'Elegant pleated mesh doors that fold neatly when open, ideal for balconies and sliding door entrances.', img:'assets/products/shoe-rack.jpg', tags:['Fold-Away','Smooth Slide','Anti-Insects'], badge:'New'},
+  {id:6, name:'Ceiling Hangers', category:'other', desc:'Stylish and functional cloth hanging systems for wardrobes, balconies, and utility spaces.', img:'assets/products/hangers.jpg', tags:['Space-Saving','Durable','Versatile'], badge:''},
 ];
 
 function renderProducts() {
@@ -505,7 +491,7 @@ function renderProducts() {
         <p class="section-subtitle reveal reveal-delay-2">Every product is precision-engineered, custom-fitted, and built to last</p>
       </div>
       <div class="products-filter reveal reveal-delay-2" id="filterBtns">
-        ${[['all','All Products'],['screens','Screens'],['grills','Grills'],['doors','Doors'],['other','Others']].map(([val,label]) => `
+        ${[['all','All Products'],['screens','Screens'],['grills','Grills'],['doors','Shoe Racks'],['other','Ceiling Hangers']].map(([val,label]) => `
         <button class="filter-btn${val==='all'?' active':''}" data-filter="${val}">${label}</button>`).join('')}
       </div>
       <div class="products-list" id="productsList">
@@ -689,7 +675,7 @@ function renderWhyUs() {
         ${[
           {text:'SecureNest transformed our balcony completely. The invisible grills are beautiful and our kids are now completely safe. Exceptional quality and service!', name:'Ramesh Babu', role:'Homeowner, Banjara Hills', init:'RB'},
           {text:'The mosquito screens they installed are top-notch. No more insects, excellent airflow. The team was professional and completed the work in a single day.', name:'Sunita Rao', role:'Apartment Owner, Gachibowli', init:'SR'},
-          {text:'I had custom pleated doors installed for my balcony. The craftsmanship is excellent and the after-sales support has been outstanding. Highly recommend!', name:'Vikram Nair', role:'Villa Owner, Jubilee Hills', init:'VN'},
+          {text:'I had custom pleated doors installed for my balcony. The craftsmanship is excellent and the after-sales support has been outstanding. Highly recommend!', name:'Fatima Khan', role:'Villa Owner, Jubilee Hills', init:'FK'},
         ].map((t,i) => `
         <div class="testimonial-card reveal reveal-delay-${i+1}">
           <div class="stars">★★★★★</div>
@@ -736,9 +722,9 @@ function renderContact() {
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-bottom:3rem">
         ${[
           {icon:'M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z', icon2:'M12 10m-3 0a3 3 0 106 0 3 3 0 00-6 0', title:'Our Office', text:'IDPL Colony,<br>Hyderabad, Telangana 500016', full:'M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0zM12 7a3 3 0 100 6 3 3 0 000-6z'},
-          {full:'M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.41-.41a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z', title:'Phone', text:'+91 95812 44586<br>+91 87654 32109'},
-          {full:'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6', title:'Email', text:'hello@securenest.in<br>support@securenest.in'},
-          {full:'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z', title:'Working Hours', text:'Mon–Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 4:00 PM'},
+          {full:'M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 14a16 16 0 006.29 6.29l.41-.41a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z', title:'Phone', text:'+91 99892 11190'},
+          {full:'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM22 6l-10 7L2 6', title:'Email', text:'securenest1997@gmail.com'},
+          {full:'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z', title:'Working Hours', text:'Mon–Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 7:00 PM'},
         ].map((c,i) => `
         <div class="value-card reveal reveal-delay-${i+1}" style="text-align:center;padding:2.5rem 2rem">
           <div class="contact-info-icon" style="margin:0 auto 1.25rem;width:56px;height:56px">
