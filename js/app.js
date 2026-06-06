@@ -512,6 +512,7 @@ function initProductFilter() {
 
 // ===== GALLERY PAGE =====
 const GALLERY_IMGS = [
+  /*
   'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
   'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80',
   'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
@@ -524,6 +525,12 @@ const GALLERY_IMGS = [
   'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&q=80',
   'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80',
   'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80',
+  */
+  'assets/gallery/img-1.jpg',
+  'assets/gallery/img-2.jpg',
+  'assets/gallery/img-3.jpg',
+  'assets/gallery/img-4.jpg',
+  'assets/gallery/img-5.jpg',
 ];
 
 function renderGallery() {
