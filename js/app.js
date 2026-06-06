@@ -2,6 +2,9 @@
 
 const App = {
   currentPage: 'home',
+  scrollTimeout: null,
+  currentObserver: null,
+  boundNavHandler: null,
 
   routes: {
     home: renderHome,
@@ -29,16 +32,28 @@ const App = {
     this.currentPage = page;
     if (updateHash) window.location.hash = page === 'home' ? '' : page;
 
+    // Ensure mobile menu is closed and body overflow is reset
+    this.closeMobileMenu();
+
     const view = document.getElementById('page-view');
     view.style.opacity = '0';
     view.style.transform = 'translateY(12px)';
 
     setTimeout(() => {
+      // Disconnect previous observer to prevent memory leaks
+      if (this.currentObserver) {
+        this.currentObserver.disconnect();
+        this.currentObserver = null;
+      }
+
       view.innerHTML = this.routes[page]();
       view.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
       view.style.opacity = '1';
       view.style.transform = 'translateY(0)';
-      window.scrollTo(0, 0);
+
+      // Use instant scroll instead of smooth for better UX
+      window.scrollTo({ top: 0, behavior: 'instant' });
+
       this.updateActiveNav(page);
       this.initRevealObserver();
       this.initPageSpecific(page);
@@ -54,19 +69,14 @@ const App = {
 
   initNavbar() {
     const navbar = document.getElementById('navbar');
+    // Throttled scroll handler for better performance
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 20);
-    });
-    document.querySelectorAll('[data-page]').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        const page = el.dataset.page;
-        this.navigate(page);
-        const mm = document.getElementById('mobileMenu');
-        const hb = document.getElementById('hamburger');
-        if (mm) { mm.classList.remove('open'); hb.classList.remove('open'); document.body.style.overflow = ''; }
-      });
-    });
+      if (this.scrollTimeout) return;
+      this.scrollTimeout = setTimeout(() => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+        this.scrollTimeout = null;
+      }, 50);
+    }, { passive: true });
   },
 
   initMobileMenu() {
@@ -75,31 +85,65 @@ const App = {
     hb.addEventListener('click', () => {
       const isOpen = mm.classList.toggle('open');
       hb.classList.toggle('open', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      // Use more specific overflow handling
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+      } else {
+        this.closeMobileMenu();
+      }
     });
   },
 
+  closeMobileMenu() {
+    const mm = document.getElementById('mobileMenu');
+    const hb = document.getElementById('hamburger');
+    if (mm && mm.classList.contains('open')) {
+      mm.classList.remove('open');
+      if (hb) hb.classList.remove('open');
+    }
+    // Reset body styles
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+  },
+
   initRevealObserver() {
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    this.currentObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          this.currentObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => this.currentObserver.observe(el));
   },
 
   initPageSpecific(page) {
     if (page === 'gallery') initGallery();
     if (page === 'products') initProductFilter();
 
-    // Re-bind nav clicks after render
-    document.querySelectorAll('[data-page]').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        const pg = el.dataset.page;
-        this.navigate(pg);
-        const mm = document.getElementById('mobileMenu');
-        const hb = document.getElementById('hamburger');
-        if (mm) { mm.classList.remove('open'); hb.classList.remove('open'); document.body.style.overflow = ''; }
+    // Remove old listeners to prevent duplicates
+    if (this.boundNavHandler) {
+      document.querySelectorAll('[data-page]').forEach(el => {
+        el.removeEventListener('click', this.boundNavHandler);
       });
+    }
+
+    // Create and bind new handler
+    this.boundNavHandler = (e) => {
+      const el = e.currentTarget;
+      if (!el.dataset.page) return;
+      e.preventDefault();
+      const pg = el.dataset.page;
+      this.navigate(pg);
+    };
+
+    document.querySelectorAll('[data-page]').forEach(el => {
+      el.addEventListener('click', this.boundNavHandler);
     });
   }
 };
@@ -512,6 +556,7 @@ function initProductFilter() {
 
 // ===== GALLERY PAGE =====
 const GALLERY_IMGS = [
+  /*
   'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
   'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80',
   'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
@@ -524,6 +569,12 @@ const GALLERY_IMGS = [
   'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&q=80',
   'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80',
   'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80',
+  */
+  'assets/gallery/img-1.jpg',
+  'assets/gallery/img-2.jpg',
+  'assets/gallery/img-3.jpg',
+  'assets/gallery/img-4.jpg',
+  'assets/gallery/img-5.jpg',
 ];
 
 function renderGallery() {
