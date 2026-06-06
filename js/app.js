@@ -85,14 +85,8 @@ const App = {
     hb.addEventListener('click', () => {
       const isOpen = mm.classList.toggle('open');
       hb.classList.toggle('open', isOpen);
-      // Use more specific overflow handling
-      if (isOpen) {
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-      } else {
-        this.closeMobileMenu();
-      }
+      // Use body class for scroll locking
+      document.body.classList.toggle('menu-open', isOpen);
     });
   },
 
@@ -103,10 +97,8 @@ const App = {
       mm.classList.remove('open');
       if (hb) hb.classList.remove('open');
     }
-    // Reset body styles
-    document.body.style.overflow = '';
-    document.body.style.position = '';
-    document.body.style.width = '';
+    // Remove body class to restore scrolling
+    document.body.classList.remove('menu-open');
   },
 
   initRevealObserver() {
