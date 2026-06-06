@@ -24,9 +24,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  /* Better mobile scrolling */
-  overscroll-behavior: none;
-  touch-action: pan-y;
+  /* Allow natural touch scrolling on mobile */
+  overscroll-behavior-y: none;
+  touch-action: manipulation;
 }
 body {
   background: var(--black);
@@ -34,9 +34,11 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
-  /* Smooth scrolling on mobile */
+  overflow-y: auto;
+  /* Enable smooth scrolling on mobile */
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none;
+  /* Allow natural scroll behavior */
+  overscroll-behavior-y: none;
 }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
