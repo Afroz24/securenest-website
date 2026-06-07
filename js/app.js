@@ -218,8 +218,8 @@ function getFooterHTML() {
           <ul>
             <li><a href="#" data-page="products">Mosquito Screens</a></li>
             <li><a href="#" data-page="products">Invisible Grills</a></li>
-            <li><a href="#" data-page="products">SS &amp; MS Grills</a></li>
-            <li><a href="#" data-page="products">Pleated Doors</a></li>
+            <li><a href="#" data-page="products">SS Grills</a></li>
+            <li><a href="#" data-page="products">Shoe Racks</a></li>
             <li><a href="#" data-page="products">Cloth Hangs</a></li>
           </ul>
         </div>
