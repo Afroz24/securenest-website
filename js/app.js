@@ -32,32 +32,27 @@ const App = {
     this.currentPage = page;
     if (updateHash) window.location.hash = page === 'home' ? '' : page;
 
-    // Ensure mobile menu is closed and body overflow is reset
+    // Ensure mobile menu is closed
     this.closeMobileMenu();
 
     const view = document.getElementById('page-view');
-    view.style.opacity = '0';
-    view.style.transform = 'translateY(12px)';
 
-    setTimeout(() => {
-      // Disconnect previous observer to prevent memory leaks
-      if (this.currentObserver) {
-        this.currentObserver.disconnect();
-        this.currentObserver = null;
-      }
+    // Disconnect previous observer to prevent memory leaks
+    if (this.currentObserver) {
+      this.currentObserver.disconnect();
+      this.currentObserver = null;
+    }
 
-      view.innerHTML = this.routes[page]();
-      view.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-      view.style.opacity = '1';
-      view.style.transform = 'translateY(0)';
+    // Instant page change for better mobile performance
+    view.innerHTML = this.routes[page]();
+    view.style.opacity = '1';
 
-      // Use instant scroll instead of smooth for better UX
-      window.scrollTo({ top: 0, behavior: 'instant' });
+    // Use instant scroll for better UX
+    window.scrollTo({ top: 0, behavior: 'instant' });
 
-      this.updateActiveNav(page);
-      this.initRevealObserver();
-      this.initPageSpecific(page);
-    }, 200);
+    this.updateActiveNav(page);
+    this.initRevealObserver();
+    this.initPageSpecific(page);
   },
 
   updateActiveNav(page) {
@@ -102,16 +97,11 @@ const App = {
   },
 
   initRevealObserver() {
-    this.currentObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          this.currentObserver.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-    document.querySelectorAll('.reveal').forEach(el => this.currentObserver.observe(el));
+    // Reveal animations disabled for better mobile scrolling performance
+    // Observer still runs but does nothing to maintain compatibility
+    this.currentObserver = new IntersectionObserver(() => {
+      // No-op - animations disabled
+    }, { threshold: 0.1 });
   },
 
   initPageSpecific(page) {
