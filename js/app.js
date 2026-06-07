@@ -167,13 +167,9 @@ function getNavbarHTML() {
   </div>`;
 }
 
-// ===== LOGO SVG =====
+// ===== LOGO IMAGE =====
 function logoSVG() {
-  return `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 2L4 12V24C4 33 12 40 22 43C32 40 40 33 40 24V12L22 2Z" fill="#C9A84C" fill-opacity="0.15" stroke="#C9A84C" stroke-width="1.5"/>
-    <path d="M22 8L10 16V24C10 30 15 35 22 37C29 35 34 30 34 24V16L22 8Z" fill="none" stroke="#C9A84C" stroke-width="1"/>
-    <text x="22" y="28" text-anchor="middle" font-family="Cormorant Garamond" font-size="11" font-weight="700" fill="#C9A84C">SN</text>
-  </svg>`;
+  return `<img src="assets/logo.png" alt="SecureNest Logo" width="44" height="44" style="display:block;width:44px;height:44px;">`;
 }
 
 // ===== FOOTER HTML =====
@@ -308,7 +304,7 @@ function renderHome() {
     <div class="container">
       <div class="stats-inner">
         <div class="stats-left reveal">
-          <div class="stats-logo-big">${logoSVG().replace('width="44" height="44"','width="110" height="110"')}</div>
+          <div class="stats-logo-big"><img src="assets/logo.png" alt="SecureNest Logo" width="110" height="110"></div>
           <div class="stats-left-text">
             <h3>Built with precision.<br><span class="gold">Made for protection.</span></h3>
             <p>Let us help you create a safer, smarter space. Our expert team brings years of craftsmanship to every installation.</p>
